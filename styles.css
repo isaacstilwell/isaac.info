@@ -491,10 +491,6 @@ button:disabled:hover {
         width: 100%;
     }
 
-    canvas {
-        display: none;
-    }
-
     body {
         --width: calc(100vw - 32px);
         --height: 420px;
@@ -502,10 +498,6 @@ button:disabled:hover {
         --asteroidBoxHeight: 112px;
         --smallChamfer: calc(var(--width) * 18 / 912);
         --largeChamfer: calc(var(--width) * 32 / 912);
-    }
-
-    #scene-container {
-        display: none;
     }
 
     .asteroid-highlight {
@@ -522,7 +514,7 @@ button:disabled:hover {
 
     .textbox {
         position: absolute;
-        top: calc(40% - var(--height) / 2);
+        top: 128px;
         left: calc(50% - var(--width) / 2);
         /* border: 2px solid var(--accent-color); */
         color: var(--accent-color);

@@ -43,7 +43,14 @@ export class AsteroidScene {
             this.camera.updateProjectionMatrix();
             this.renderer.setSize(window.innerWidth, window.innerHeight);
 
-            if (this.state === 'ZOOMING_IN' || this.state === 'ZOOMED') {
+            if (window.innerWidth < 768 && this.state && this.state !== 'IDLE') {
+              this.state = 'IDLE';
+              if (this.asteroids && this.originalPositions) {
+                this.asteroids[this.currentAsteroidIndex].position.copy(this.originalPositions[this.currentAsteroidIndex]);
+              }
+              if (this._onZoomed) { this._onZoomed(); this._onZoomed = null; }
+              this._afterZoomOut = null;
+            } else if (this.state === 'ZOOMING_IN' || this.state === 'ZOOMED') {
               const targetWorld = this._getTargetFromDiv(".asteroid-highlight");
               const targetLocal = this.planetGroup.worldToLocal(targetWorld);
               this.targetX = targetLocal.x;
