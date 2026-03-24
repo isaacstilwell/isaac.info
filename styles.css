@@ -87,7 +87,7 @@ header a:hover {
 
 
     position: absolute;
-    top: calc(50% - var(--height) / 2);
+    top: max(128px, calc(50% - var(--height) / 2));
     left: calc(50% - var(--width) / 2);
     /* border: 2px solid var(--accent-color); */
     color: var(--accent-color);
