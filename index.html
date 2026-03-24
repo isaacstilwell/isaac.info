@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>isaac.info</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div id="scene-container"></div>
+    <div class="header-wrapper">
+      <header>
+        <a href="/" class="title">isaac.info</a>
+        <nav aria-label="Primary">
+          <button class="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul>
+            <li><a href="/" data-nav="home" aria-current="page">Home</a></li>
+            <li><a href="/about" data-nav="about">About</a></li>
+            <li><a href="/work" data-nav="work">Work</a></li>
+            <li><a href="/projects" data-nav="projects">Projects</a></li>
+          </ul>
+        </nav>
+
+      </header>
+    </div>
+    <div class="textbox hidden">
+      <div class="textbox-header">
+        <div class="textbox-header-box">
+          <div class="item">
+            <div class="deco-left">
+              <div class="deco-small"></div>
+              <div class="deco-large"></div>
+              <div class="deco-small"></div>
+            </div>
+            <hgroup>
+              <p>Title:</p>
+              <h2 id="textbox-title">Intern|Three Pillars</h2>
+            </hgroup>
+            <div class="deco-right">
+              <div class="deco-large"></div>
+              <div class="deco-small"></div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="deco-left">
+              <div class="deco-small"></div>
+              <div class="deco-large"></div>
+              <div class="deco-small"></div>
+            </div>
+            <div class="timestamps">
+              <hgroup>
+                <p>Initiate:</p>
+                <time id="initiate" datetime="2025-12-08">
+                  <span id="initiate-num" class="date-number">08|</span>
+                  <span class="date-month-year">
+                    <span id="initiate-mo" class="text">Nov</span>
+                    <span id="initiate-yr" class="text">2025</span>
+                  </span>
+                </time>
+              </hgroup>
+              <hgroup>
+                <p>Terminate:</p>
+                <time id="terminate" datetime="2025-12-08">
+                  <span id="terminate-num" class="date-number">04|</span>
+                  <span class="date-month-year">
+                    <span id="terminate-mo" class="text">Dec</span>
+                    <span id="terminate-yr" class="text">2025</span>
+                  </span>
+                </time>
+              </hgroup>
+            </div>
+            <div class="deco-right">
+              <div class="deco-large"></div>
+              <div class="deco-small"></div>
+            </div>
+          </div>
+        </div>
+        <div class="asteroid-highlight"></div>
+      </div>
+
+
+      <div class="separator pad-header">
+        <div class="header-separator">
+          <div class="deco-left">
+            <span class="deco-large fill"></span>
+            <span class="deco-large outline"></span>
+            <span class="deco-small outline"></span>
+          </div>
+          <span class="deco-large fill"></span>
+        </div>
+        <div class="asteroid-separator">
+          <span id="asteroid-title" class="text">Project 01</span>
+          <div class="deco-right">
+            <span class="deco-small fill"></span>
+            <span class="spacer"></span>
+            <span class="deco-small outline"></span>
+            <span class="deco-large outline"></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="textbox-body">
+        <hgroup>
+          <p>01</p>
+          <h3>Built React admin panel enabling staff to modify 250+ LLM prompts and  other records directly in the database, eliminating administrator  overhead and reducing database update time by 75%</h3>
+        </hgroup>
+        <hgroup>
+          <p>01</p>
+          <h3>Built React admin panel enabling staff to modify 250+ LLM prompts and  other records directly in the database, eliminating administrator  overhead and reducing database update time by 75%</h3>
+        </hgroup>
+        <hgroup>
+          <p>01</p>
+          <h3>Built React admin panel enabling staff to modify 250+ LLM prompts and  other records directly in the database, eliminating administrator  overhead and reducing database update time by 75%</h3>
+        </hgroup>
+        <hgroup>
+          <p>01</p>
+          <h3>Built React admin panel enabling staff to modify 250+ LLM prompts and  other records directly in the database, eliminating administrator  overhead and reducing database update time by 75%</h3>
+        </hgroup>
+      </div>
+
+      <div class="separator pad-body">
+        <div class="header-separator">
+          <div class="deco-left">
+            <span class="deco-xxl fill"></span>
+            <span class="deco-large outline"></span>
+            <span class="deco-xl outline"></span>
+          </div>
+          <div class="deco-right">
+            <span class="deco-xl fill"></span>
+          </div>
+        </div>
+      </div>
+
+      <button id="back-button" class="back-button">&lt; back</button>
+      <div class="prev-next-buttons">
+        <button id="prev-button">&lt; prev</button>
+        <button id="next-button">next &gt;</button>
+      </div>
+    </div>
+  </body>
+</html>
